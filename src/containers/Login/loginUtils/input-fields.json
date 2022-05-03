@@ -1,0 +1,28 @@
+{
+  "fields": [{
+    "name": "email",
+    "id": "email",
+    "type": "email",
+    "placeholder": "PeterP@dailybugle.com",
+    "maxLength": "150",
+    "value": "",
+    "readOnly": false,
+    "labelName": "E-mail",
+    "requiredErrorMessage": "Please Enter Email Address",
+    "required": true,
+    "parentClass": 12
+  },
+  {
+    "name": "password",
+    "id": "password",
+    "type": "password",
+    "placeholder": "******",
+    "maxLength": "150",
+    "value": "",
+    "readOnly": false,
+    "labelName": "Password",
+    "requiredErrorMessage": "Please Enter Password",
+    "required": true,
+    "parentClass": 12
+  }]
+}

@@ -1,0 +1,19 @@
+/* ColorPicker Input */
+
+.css-1yn2e29-InputColor{
+  position: absolute !important;
+  margin: 0px 8px;
+  display: inline-block !important;
+  box-sizing: border-box;
+  width: 30px !important;
+  height: 30px !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 4px;
+}
+
+.css-1vpurlb-InputColor{
+  border-radius: 50%;
+}
+
+/* End of ColorPicker Input */

@@ -1,0 +1,93 @@
+{
+  "fields": [
+    {
+      "name": "brandColor",
+      "id": "brandColor",
+      "type": "colorInput",
+      "placeholder": "#d80000",
+      "maxLength": "",
+      "value": "",
+      "readOnly": true,
+      "labelName": "Pick a brand color",
+      "requiredErrorMessage": "Please choose brand color",
+      "required": true,
+      "parentClass": 12
+    },
+    {
+      "name": "profilePhoto",
+      "id": "profilePhoto",
+      "type": "file",
+      "placeholder": "ParkerBurgerLogo.jpg",
+      "maxLength": "",
+      "value": "",
+      "display": "hidden",
+      "readOnly": true,
+      "labelName": "",
+      "requiredErrorMessage": "Please choose image",
+      "required": true,
+      "parentClass": 12
+    },
+    {
+      "name": "profilePhotoHelper",
+      "id": "profilePhotoHelper",
+      "moveTop": true,
+      "type": "text",
+      "placeholder": "ParkerBurgerLogo.jpg",
+      "maxLength": "",
+      "value": "",
+      "endAdornment": true,
+      "icon": "CloudUpload",
+      "readOnly": true,
+      "labelName": "Upload a profile photo",
+      "requiredErrorMessage": "Please choose image",
+      "helperText": "Your profile image should be at least 300x300px in .JPG, .PNG or .PDF formats and no more heavier than 3MB.",
+      "required": true,
+      "parentClass": 12
+    },
+    {
+      "name": "simplifiedName",
+      "id": "simplifiedName",
+      "type": "text",
+      "placeholder": "Enter Simplified Name",
+      "maxLength": "500",
+      "value": "",
+      "helperTooltip": "This text is displayed in a collapsed nav bar at the top of the screen.",
+      "readOnly": false,
+      "labelName": "Simplified Restaurant name ",
+      "requiredErrorMessage": "Please Enter Simplified Name",
+      "required": true,
+      "parentClass": 12
+    },
+    {
+      "name": "coverPhoto",
+      "id": "coverPhoto",
+      "type": "file",
+      "placeholder": "ParkerBurgerLogo.jpg",
+      "maxLength": "",
+      "value": "",
+      "display": "hidden",
+      "readOnly": true,
+      "labelName": "",
+      "requiredErrorMessage": "Please choose image",
+      "required": true,
+      "parentClass": 12
+    },
+    {
+      "name": "coverPhotoHelper",
+      "id": "coverPhotoHelper",
+      "moveTop": true,
+      "type": "text",
+      "placeholder": "ParkerBurgerLogo.jpg",
+      "maxLength": "",
+      "value": "",
+      "readOnly": true,
+      "endAdornment": true,
+      "icon": "CloudUpload",
+      "labelName": "Upload a cover image ",
+      "requiredErrorMessage": "Please choose image",
+      "helperText": "Your profile image should be at least 300x300px in .JPG, .PNG or .PDF formats and no more heavier than 3MB.",
+      "required": true,
+      "parentClass": 12
+    }
+  ]
+}

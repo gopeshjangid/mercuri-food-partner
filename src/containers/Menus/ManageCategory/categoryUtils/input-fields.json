@@ -1,0 +1,45 @@
+{
+  "fields": [
+    {
+      "name": "name",
+      "id": "name",
+      "type": "text",
+      "placeholder": "Enter Category Name",
+      "maxLength": "500",
+      "value": "",
+      "readOnly": false,
+      "labelName": "Category name",
+      "requiredErrorMessage": "Please Enter Category Name",
+      "required": true,
+      "parentClass": 12
+    },
+    {
+      "name": "description",
+      "id": "description",
+      "type": "text",
+      "placeholder": "Type description ...",
+      "maxLength": "500",
+      "value": "",
+      "readOnly": false,
+      "labelName": "Description (optional)",
+      "requiredErrorMessage": "",
+      "required": false,
+      "parentClass": 12,
+      "multiline": true,
+      "rows": 5
+    },
+    {
+      "name": "takeoutAvailable",
+      "id": "takeoutAvailable",
+      "type": "checkbox",
+      "placeholder": "",
+      "maxLength": "500",
+      "value": "false",
+      "readOnly": false,
+      "labelName": "Available for take out",
+      "requiredErrorMessage": "Please Select",
+      "required": false,
+      "parentClass": 8
+    }
+  ]
+}

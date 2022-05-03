@@ -1,0 +1,31 @@
+{
+  "fields": [
+    {
+      "name": "name",
+      "id": "name",
+      "type": "text",
+      "placeholder": "Enter Category Name",
+      "maxLength": "500",
+      "value": "",
+      "readOnly": false,
+      "labelName": "Category name",
+      "requiredErrorMessage": "Please Enter Category Name",
+      "required": true,
+      "parentClass": 12
+    },
+    {
+      "name": "label",
+      "id": "label",
+      "type": "text",
+      "placeholder": "Enter Side Category Label",
+      "maxLength": "500",
+      "value": "",
+      "readOnly": false,
+      "labelName": "Side Category Label",
+      "requiredErrorMessage": "Please Enter Category Label",
+      "required": true,
+      "parentClass": 12,
+      "rows": 5
+    }
+  ]
+}

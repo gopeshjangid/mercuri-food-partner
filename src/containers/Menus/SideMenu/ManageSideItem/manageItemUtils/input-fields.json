@@ -1,0 +1,101 @@
+{
+  "fields": [
+    {
+      "name": "name",
+      "id": "name",
+      "type": "text",
+      "placeholder": "Item Variation Name",
+      "maxLength": "500",
+      "value": "",
+      "readOnly": false,
+      "labelName": "Item variation name",
+      "requiredErrorMessage": "Please Enter item name",
+      "required": true,
+      "parentClass": 12
+    },
+    {
+      "name": "price",
+      "id": "price",
+      "type": "number",
+      "placeholder": "$ 2.99",
+      "maxLength": "500",
+      "value": "",
+      "readOnly": false,
+      "labelName": "Additional price (optional)",
+      "requiredErrorMessage": "",
+      "required": false,
+      "parentClass": 6,
+      "rows": 5
+    },
+    {
+      "name": "calories",
+      "id": "calories",
+      "type": "number",
+      "placeholder": "Cal 430",
+      "maxLength": "500",
+      "value": "",
+      "readOnly": false,
+      "labelName": "Item calories (optional)",
+      "requiredErrorMessage": "",
+      "required": false,
+      "parentClass": 6,
+      "rows": 5
+    },
+    {
+      "name": "isDefault",
+      "id": "default",
+      "type": "checkbox",
+      "placeholder": "",
+      "maxLength": "500",
+      "value": "false",
+      "readOnly": false,
+      "labelName": "Set as default item",
+      "requiredErrorMessage": "Please Select",
+      "required": false,
+      "parentClass": 8
+    },
+    {
+      "name": "enableCustomization",
+      "id": "custom",
+      "type": "checkbox",
+      "placeholder": "",
+      "maxLength": "500",
+      "value": "false",
+      "readOnly": false,
+      "labelName": "Add side item customization",
+      "requiredErrorMessage": "Please Select",
+      "required": false,
+      "parentClass": 8
+    },
+    {
+      "name": "customizationMenu",
+      "id": "customizationMenu",
+      "type": "select",
+      "moveTop": true,
+      "placeholder": "Side Item Headline",
+      "maxLength": "500",
+      "value": "",
+      "options": [],
+      "readOnly": false,
+      "labelName": "Customization Menu",
+      "requiredErrorMessage": "Please Enter item name",
+      "required": false,
+      "parentClass": 6,
+      "parent": "enableCustomization"
+    },
+    {
+      "name": "headline",
+      "id": "itemHeadline",
+      "type": "text",
+      "placeholder": "Side Item Headline",
+      "maxLength": "500",
+      "value": "",
+      "readOnly": false,
+      "labelName": "Side Item Headline",
+      "requiredErrorMessage": "Please Enter item name",
+      "required": false,
+      "parentClass": 6,
+      "parent": "enableCustomization"
+    }
+  ]
+}

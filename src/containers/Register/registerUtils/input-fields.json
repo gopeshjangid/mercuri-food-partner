@@ -1,0 +1,80 @@
+{
+  "fields": [{
+    "name": "restaurant_name",
+    "id": "restaurant_name",
+    "type": "text",
+    "placeholder": "Parker Burguers",
+    "maxLength": "150",
+    "value": "",
+    "readOnly": false,
+    "labelName": "Restaurant Name",
+    "requiredErrorMessage": "Please Enter Restaurant Name",
+    "required": true,
+    "parentClass": 12
+  }, 
+  {
+    "name": "first_name",
+    "id": "first_name",
+    "type": "text",
+    "placeholder": "Peter",
+    "maxLength": "150",
+    "value": "",
+    "readOnly": false,
+    "labelName": "First Name",
+    "requiredErrorMessage": "Please Enter First Name",
+    "required": true,
+    "parentClass": 6
+  }, 
+  {
+    "name": "last_name",
+    "id": "last_name",
+    "type": "text",
+    "placeholder": "Parker",
+    "maxLength": "150",
+    "value": "",
+    "readOnly": false,
+    "labelName": "Last Name",
+    "requiredErrorMessage": "Please Enter Last Name",
+    "required": true,
+    "parentClass": 6
+  },
+  {
+    "name": "email",
+    "id": "email",
+    "type": "email",
+    "placeholder": "PeterP@dailybugle.com",
+    "maxLength": "150",
+    "value": "",
+    "readOnly": false,
+    "labelName": "E-mail",
+    "requiredErrorMessage": "Please Enter Email Address",
+    "required": true,
+    "parentClass": 12
+  },
+  {
+    "name": "password",
+    "id": "password",
+    "type": "password",
+    "placeholder": "******",
+    "maxLength": "150",
+    "value": "",
+    "readOnly": false,
+    "labelName": "Password",
+    "requiredErrorMessage": "Please Enter Password",
+    "required": true,
+    "parentClass": 12
+  },
+  {
+    "name": "confirm_password",
+    "id": "confirm_password",
+    "type": "password",
+    "placeholder": "******",
+    "maxLength": "150",
+    "value": "",
+    "readOnly": false,
+    "labelName": "Confirm Password",
+    "requiredErrorMessage": "Please Enter Password",
+    "required": true,
+    "parentClass": 12
+  }]
+}

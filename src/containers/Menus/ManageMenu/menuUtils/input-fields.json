@@ -1,0 +1,17 @@
+{
+  "fields": [
+    {
+      "name": "menuName",
+      "id": "menuName",
+      "type": "text",
+      "placeholder": "Enter Menu",
+      "maxLength": "150",
+      "value": "",
+      "readOnly": false,
+      "labelName": "Menu Name",
+      "requiredErrorMessage": "Please Enter Menu Name",
+      "required": true,
+      "parentClass": 12
+    }
+  ]
+}

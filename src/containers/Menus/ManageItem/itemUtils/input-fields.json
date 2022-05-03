@@ -1,0 +1,161 @@
+{
+  "fields": [
+    {
+      "name": "name",
+      "id": "name",
+      "type": "text",
+      "placeholder": "Enter Item Name",
+      "maxLength": "500",
+      "value": "",
+      "readOnly": false,
+      "labelName": "Item name",
+      "requiredErrorMessage": "Please Enter Item Name",
+      "required": true,
+      "parentClass": 12
+    },
+    {
+      "name": "description",
+      "id": "description",
+      "type": "text",
+      "placeholder": "Type description ...",
+      "maxLength": "500",
+      "value": "",
+      "readOnly": false,
+      "labelName": "Description (optional)",
+      "requiredErrorMessage": "",
+      "required": false,
+      "parentClass": 12,
+      "multiline": true,
+      "rows": 5
+    },
+    {
+      "name": "price",
+      "id": "price",
+      "type": "number",
+      "placeholder": "0.00",
+      "maxLength": "",
+      "value": "",
+      "readOnly": false,
+      "labelName": "Item price",
+      "startAdornment": true,
+      "iconText": "$",
+      "requiredErrorMessage": "Please Enter price",
+      "required": true,
+      "parentClass": 6
+    },
+    {
+      "name": "itemCalories",
+      "id": "itemCalories",
+      "type": "number",
+      "placeholder": "0.00",
+      "maxLength": "",
+      "value": "",
+      "startAdornment": true,
+      "iconText": "Cal",
+      "readOnly": false,
+      "labelName": "Item Calories",
+      "requiredErrorMessage": "Please Enter calories",
+      "required": true,
+      "parentClass": 6
+    },
+    {
+      "name": "itemImage1",
+      "id": "itemImage1",
+      "type": "file",
+      "placeholder": "madloveburger.jpg",
+      "maxLength": "",
+      "value": "",
+      "display": "hidden",
+      "readOnly": true,
+      "labelName": "",
+      "requiredErrorMessage": "Please choose image",
+      "required": false,
+      "parentClass": 12
+    },
+    {
+      "name": "itemImage",
+      "id": "itemImage",
+      "moveTop": true,
+      "type": "text",
+      "placeholder": "madloveburger.jpg",
+      "maxLength": "",
+      "value": "",
+      "readOnly": true,
+      "endAdornment": true,
+      "icon": "CloudUpload",
+      "labelName": "Item image (optional)",
+      "requiredErrorMessage": "Please choose image",
+      "required": false,
+      "parentClass": 12
+    },
+    {
+      "name": "category",
+      "id": "category",
+      "type": "select",
+      "placeholder": "Category",
+      "maxLength": "200",
+      "value": [],
+      "options": [
+        {
+          "id": 1,
+          "name": "None"
+        },
+        {
+          "id": 2,
+          "name": "Brink"
+        },
+        {
+          "id": 3,
+          "name": "Doshii"
+        },
+        {
+          "id": 4,
+          "name": "Dinerware"
+        }
+      ],
+      "readOnly": false,
+      "labelName": "Category",
+      "requiredErrorMessage": "Please Select a category",
+      "required": true,
+      "parentClass": 12
+    },
+    {
+      "name": "sides",
+      "id": "sides",
+      "type": "select",
+      "placeholder": "Add Sides",
+      "maxLength": "200",
+      "value": [],
+      "options": [
+        {
+          "id": 1,
+          "name": "Free sides"
+        }
+      ],
+      "readOnly": false,
+      "labelName": "Add Sides (optional)",
+      "requiredErrorMessage": "",
+      "required": true,
+      "parentClass": 12
+    },
+    {
+      "name": "taxes",
+      "id": "taxes",
+      "type": "select",
+      "placeholder": "Applicable taxes",
+      "maxLength": "200",
+      "value": [],
+      "options": [
+        {
+          "id": 1,
+          "name": "Sales Tax (8%)"
+        }
+      ],
+      "readOnly": false,
+      "labelName": "Applicable taxes",
+      "requiredErrorMessage": "Please Select a tax",
+      "required": true,
+      "parentClass": 12
+    }
+  ]
+}

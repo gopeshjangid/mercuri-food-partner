@@ -1,0 +1,95 @@
+import React, { useState } from 'react';
+import { Grid, FormControlLabel, Typography } from '@material-ui/core';
+import { Add } from '@material-ui/icons';
+import { truncate } from 'lodash';
+
+import MRCButton from '../../../components/Button/MRCButton';
+import ENUMS from '../../../utils/enum';
+import ManageSideItem from './ManageSideItem';
+
+export default function Category({
+  category,
+  categories,
+  classes,
+  partnerId,
+  handleCreateItem = () => { },
+  handleEditCategory,
+}) {
+
+  const [openAddItem, setOpenAddItem] = useState(false);
+  const [action, setAction] = useState('');
+  const handleAddItem = (item, category) => {
+    setAction(ENUMS.CREATE);
+    setOpenAddItem(true);
+  }
+  const handleClose = () => {
+    setOpenAddItem(false);
+  }
+
+  return (
+    <>
+      <Grid container alignItems="center" justify="space-between">
+        <Grid item xs={5}>
+          <FormControlLabel
+            aria-label="Acknowledge"
+            onClick={(event) => event.stopPropagation()}
+            onFocus={(event) => event.stopPropagation()}
+            control={(
+              <MRCButton
+                title={category.name}
+                className={classes.categoryName}
+                variant="text"
+                color="default"
+                type="button"
+                onClick={() => handleEditCategory()}
+              >
+                {truncate(category.name, {
+                  length: 20
+                })}
+              </MRCButton>
+            )}
+            label=""
+          />
+        </Grid>
+        <Grid item xs={2} container justify="flex-start">
+          <Typography className={classes.secondaryHeading} variant="h5">
+            {category?.sideItems?.length} {ENUMS.ITEMS}
+          </Typography>
+        </Grid>
+        <Grid item xs={1} />
+        <Grid item xs={2} container justify="space-between">
+          <Grid item xs={1} />
+          <FormControlLabel
+            aria-label="Acknowledge"
+            onClick={(event) => event.stopPropagation()}
+            onFocus={(event) => event.stopPropagation()}
+            control={(
+              <MRCButton
+                variant="text"
+                type="button"
+                color="primary"
+                text="primary"
+                onClick={() => handleAddItem()}
+                color="primary"
+              >
+                <Add fontSize="small" className={classes.addIcon} color="primary" />
+                &nbsp;{ENUMS.ADD_ITEM}
+              </MRCButton>
+            )}
+            label=""
+          />
+          {
+            openAddItem && partnerId && <ManageSideItem
+              categories={categories}
+              category={category}
+              action={action}
+              handleClose={handleClose}
+              partnerId={partnerId}
+            />
+          }
+        </Grid>
+      </Grid>
+
+    </>
+  );
+}
